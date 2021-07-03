@@ -18,3 +18,27 @@ CommentService.prototype.createComment = async function (CommentObj) {
   let savedComment = await newComment.save();
   return savedComment;
 };
+
+CommentService.prototype.allComment = async function () {
+  const comments = await Comment.find({}).populate("project");
+  return comments;
+};
+
+CommentService.prototype.projectComment = async function (project_id) {
+  const comments = await Comment.find({ project: project_id }).populate(
+    "user project"
+  );
+  return comments;
+};
+
+CommentService.prototype.userComment = async function (id) {
+  const comments = await Comment.find({ user: id });
+  return comments;
+};
+
+CommentService.prototype.singleComment = async function (_id) {
+  const comment = await Comment.findOne({ _id });
+  return comment;
+};
+
+module.exports = CommentService;

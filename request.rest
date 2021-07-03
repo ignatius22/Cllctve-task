@@ -1,0 +1,50 @@
+### 
+POST http://localhost:3000/api/register_user 
+Content-Type: application/json
+
+{
+"firstName": "Tom"
+}
+
+### 
+POST http://localhost:3000/api/create_comment 
+Content-Type: application/json
+
+{
+"project": "60dfbf94c44e23d52b62ca9b",
+"user": "60dfc1dec44e23d52b62cab1", 
+"content": "just awesome!"
+}
+
+### 
+POST http://localhost:3000/api/create_project
+Content-Type: application/json
+
+{
+"name": "Benny's projects"
+}
+
+### 
+GET http://localhost:3000/api/projects
+Content-Type: application/json
+
+### 
+GET http://localhost:3000/api/projects/60dfbd94e73df2d3d0472a2d 
+Content-Type: application/json
+
+### 
+GET http://localhost:3000/api/all_comment 
+Content-Type: application/json
+
+### 
+GET http://localhost:3000/api/user_comment/60df544cbfd39ea2110d4651 
+Content-Type: application/json
+
+### 
+GET http://localhost:3000/api/project_comment/60dfbf94c44e23d52b62ca9b
+Content-Type: application/json
+
+### 
+GET http://localhost:3000/api/single_comment/60dfc28bc44e23d52b62cab8 
+Content-Type: application/json
+
