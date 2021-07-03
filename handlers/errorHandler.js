@@ -47,6 +47,7 @@ exports.productionErrors = (err, req, res, next) => {
 };
 
 exports.notFound = (req, res, next) => {
+if(req.url === '/') return res.json({message:"welcome to the API"});
   res.status(404).json({
     message: "Route not Found",
   });
