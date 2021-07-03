@@ -1,6 +1,9 @@
 # Hypothetical Comment System
 
-This project is based on Node, express for the RESTFUL API which provides hypothetical comment system where users can comment on other CLLCTVE members' projects.
+
+![alt text](api.png)
+
+This project is based on Node, express and mongoDB for a RESTFUL API which provides hypothetical comment system where users can comment on other CLLCTVE members' projects.
 
 - Create a simple comment system backend.
 
@@ -12,7 +15,7 @@ This project is based on Node, express for the RESTFUL API which provides hypoth
 
 - We should be able to test these routes ourselves via postman.
 
-The screen below shows the information we’re interested in displaying on the frontend, and for the purposes of this challenge you will be required to come up with an API that would generate this information.
+The screen below shows the information to be  displayed on the frontend.
 
 ### Users
 
