@@ -1,7 +1,38 @@
-# Cllctve-task
+# Find Your House
+
+This project is based on Node, express for the RESTFUL API which provides hypothetical comment system where users can comment on other CLLCTVE members' projects ( also called portfolio items). The main objectives of this challenge are:
+
+- Create a simple comment system backend.
+
+- GET all of the comments for a portfolio item.
+
+- GET all of the projects.
+
+- POST new comments as multiple users (you can just give us a couple user IDs to use).
+
+- We should be able to test these routes ourselves via postman.
 
 
-live link "http://178.128.135.246:3000/"
+
+The screen below shows the information we’re interested in displaying on the frontend, and for the purposes of this challenge you will be required to come up with an API that would generate this information. 
+
+
+The things we care about are:
+
+Users
+  FirstName field
+
+Comments
+  CommentContent field
+
+Projects
+   Name
+
+
+
+
+
+[Live Demo](http://178.128.135.246:3000/)
 
 
 ## Register a user
