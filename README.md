@@ -57,7 +57,7 @@ Name
     "name": "Benny's projects"
     }
 
-## Get all project
+## Get all projects
 
     GET http://178.128.135.246:3000/api/projects
     Content-Type: application/json
