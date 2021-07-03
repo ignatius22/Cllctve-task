@@ -1,6 +1,6 @@
 # Hypothetical Comment System
 
-This project is based on Node, express for the RESTFUL API which provides hypothetical comment system where users can comment on other CLLCTVE members' projects ( also called portfolio items). The main objectives of this challenge are:
+This project is based on Node, express for the RESTFUL API which provides hypothetical comment system where users can comment on other CLLCTVE members' projects.
 
 - Create a simple comment system backend.
 
@@ -12,31 +12,25 @@ This project is based on Node, express for the RESTFUL API which provides hypoth
 
 - We should be able to test these routes ourselves via postman.
 
+The screen below shows the information we’re interested in displaying on the frontend, and for the purposes of this challenge you will be required to come up with an API that would generate this information.
 
+### Users
 
-The screen below shows the information we’re interested in displaying on the frontend, and for the purposes of this challenge you will be required to come up with an API that would generate this information. 
+FirstName field
 
+### Comments
 
-The things we care about are:
+CommentContent field
 
-Users
-  FirstName field
+### Projects
 
-Comments
-  CommentContent field
-
-Projects
-   Name
-
-
-
-
+Name
 
 [Live Demo](http://178.128.135.246:3000/)
 
-
 ## Register a user
-    POST http://178.128.135.246:3000/api/register_user 
+
+    POST http://178.128.135.246:3000/api/register_user
     Content-Type: application/json
 
     {
@@ -45,12 +39,12 @@ Projects
 
 ## Create a comment
 
-    POST http://178.128.135.246:3000/api/create_comment 
+    POST http://178.128.135.246:3000/api/create_comment
     Content-Type: application/json
 
     {
     "project": "60dfbf94c44e23d52b62ca9b",
-    "user": "60dfc1dec44e23d52b62cab1", 
+    "user": "60dfc1dec44e23d52b62cab1",
     "content": "just awesome!"
     }
 
@@ -70,9 +64,8 @@ Projects
 
 ## Get a single project
 
-    GET http://178.128.135.246:3000/api/projects/60dfbd94e73df2d3d0472a2d 
+    GET http://178.128.135.246:3000/api/projects/60dfbd94e73df2d3d0472a2d
     Content-Type: application/json
-
 
 ## Get all comments to a single project
 
@@ -81,6 +74,5 @@ Projects
 
 ## Get a single project
 
-    GET http://178.128.135.246:3000/api/single_comment/60dfc28bc44e23d52b62cab8 
+    GET http://178.128.135.246:3000/api/single_comment/60dfc28bc44e23d52b62cab8
     Content-Type: application/json
-
