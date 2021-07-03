@@ -2,10 +2,14 @@ require("dotenv").config({ path: ".env" });
 
 const mongoose = require("mongoose");
 
-mongoose.connect(process.env.DATABASE, {
-  useUnifiedTopology: true,
-  useNewUrlParser: true,
-});
+mongoose.connect(
+  process.env.DATABASE ||
+    "mongodb+srv://iggy:22igee.org@cllctve-db.8getk.mongodb.net/cllctveDatabase?retryWrites=true&w=majority",
+  {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+  }
+);
 
 mongoose.connection.on("error", (err) => {
   console.log("Mongoose Connection ERROR: " + err.message);
