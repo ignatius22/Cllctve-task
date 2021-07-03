@@ -1,4 +1,4 @@
-# Find Your House
+# Hypothetical Comment System
 
 This project is based on Node, express for the RESTFUL API which provides hypothetical comment system where users can comment on other CLLCTVE members' projects ( also called portfolio items). The main objectives of this challenge are:
 
