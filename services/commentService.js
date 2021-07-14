@@ -2,6 +2,8 @@ const Comment = require("../models/comment");
 
 function CommentService() {}
 
+
+
 CommentService.prototype.createComment = async function (CommentObj) {
   const { user, project, content } = CommentObj;
   if (content == undefined) throw "content is not defined";
@@ -18,6 +20,7 @@ CommentService.prototype.createComment = async function (CommentObj) {
   let savedComment = await newComment.save();
   return savedComment;
 };
+
 
 CommentService.prototype.allComment = async function () {
   const comments = await Comment.find({}).populate("project");
